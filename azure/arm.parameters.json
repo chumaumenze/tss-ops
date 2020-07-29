@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmSku": {
+      "value": "Standard_B1S"
+    },
+    "ubuntuOSVersion": {
+      "value": "18.04-LTS"
+    },
+    "vmssName": {
+      "value": "tss-test"
+    },
+    "instanceCount": {
+      "value": 2
+    },
+    "minimumCapacity": {
+      "value": 2
+    },
+    "maximumCapacity": {
+      "value": 10
+    },
+    "defaultCapacity": {
+      "value": 10
+    },
+    "metricName": {
+      "value": "Percentage CPU"
+    },
+    "metricThresholdToScaleOut": {
+      "value": 60
+    },
+    "metricThresholdToScaleIn": {
+      "value": 20
+    },
+    "changePercentScaleOut": {
+      "value": 20
+    },
+    "changePercentScaleIn": {
+      "value": 10
+    },
+    "autoscaleEnabled": {
+      "value": true
+    },
+    "adminUsername": {
+      "value": "test_admin_user"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "adminPasswordOrKey": {
+      "value": "SecurePassword123!"
+    }
+  }
+}
